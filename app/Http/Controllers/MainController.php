@@ -61,19 +61,85 @@ class MainController extends Controller
         ];
         $questions[1] = [
             [
+                'id' => 0,
+                'answer' => 'Savolingizni kiriting',
+            ],
+            [
+                'id' => 1,
+                'answer' => 'Divagetlimdan nosoz ovoz chiqyabdi',
+            ],
+            [
+                'id' => 2,
+                'answer' => 'Avtomobilim yo\'l davomida ochib qoldi',
+            ],
+            [
+                'id' => 3,
+                'answer' => 'Avtomobilim yo\'l davomida pasgi qismida nosoz ovoz chiqyabdi',
+            ],
+            [
                 'id' => 4,
-                'question' => '4 What is the answer to life, the universe and everything?',
+                'answer' => 'Avtomobilim yoqlig\'i sarfi oshib ketdi',
             ],
             [
                 'id' => 5,
-                'question' => '5 What is the answer to life, the universe and everything?',
+                'answer' => 'Uzatgich qisimim ishlamayabdi',
             ],
             [
                 'id' => 6,
-                'question' => '6 What is the answer to life, the universe and everything?',
+                'answer' => 'Avtomobilim judayam kop chayqalyabdi',
             ],
+            [
+                'id' => 7,
+                'answer' => 'Avtomobilim yo\'l davomida turli nojoya hidlar kiryabdi',
+            ],
+            [
+                'id' => 8,
+                'answer' => 'Avtomobilim yo\'l davomida benzin korsatgichim ishlamayabdi',
+            ]
+
 
         ];
+        $questions[2] = [
+            [
+                'id' => 0,
+                'answer' => 'Savolingizni kiriting',
+            ],
+            [
+                'id' => 1,
+                'answer' => 'Divagetlimdan nosoz ovoz chiqyabdi',
+            ],
+            [
+                'id' => 2,
+                'answer' => 'Avtomobilim yo\'l davomida ochib qoldi',
+            ],
+            [
+                'id' => 3,
+                'answer' => 'Avtomobilim yo\'l davomida pasgi qismida nosoz ovoz chiqyabdi',
+            ],
+            [
+                'id' => 4,
+                'answer' => 'Avtomobilim yoqlig\'i sarfi oshib ketdi',
+            ],
+            [
+                'id' => 5,
+                'answer' => 'Uzatgich qisimim ishlamayabdi',
+            ],
+            [
+                'id' => 6,
+                'answer' => 'Avtomobilim judayam kop chayqalyabdi',
+            ],
+            [
+                'id' => 7,
+                'answer' => 'Avtomobilim yo\'l davomida turli nojoya hidlar kiryabdi',
+            ],
+            [
+                'id' => 8,
+                'answer' => 'Avtomobilim yo\'l davomida benzin korsatgichim ishlamayabdi',
+            ]
+
+
+        ];
+
 
 
         return response()->json([
@@ -210,24 +276,242 @@ class MainController extends Controller
 
         ];
         $questions[1] = [
-            [
-                'id' => 4,
-                'answer' => '4 What is the answer to life, the universe and everything?',
+            1 => [
+                'id' => 1,
+                'question' => 'Divgateliz o\'t olyabdimi ?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
             ],
-            [
-                'id' => 5,
-                'answer' => '5 What is the answer to life, the universe and everything?',
+            2 => [
+                'id' => 1,
+                'question' => 'Mator qismida tutun chiqdimi ?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
             ],
-            [
-                'id' => 6,
-                'answer' => '6 What is the answer to life, the universe and everything?',
+            3 => [
+                'id' => 1,
+                'question' => 'Tormiz tizimi to\'g\'ri ishlaybdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            4 => [
+                'id' => 1,
+                'question' => 'Avtomobilningiz turli siltanishlarga ochirayabdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+
+            5 => [
+                'id' => 1,
+                'question' => 'Avtomobilningiz  ot olyabdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+
+            6 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz rul qisimi nosozliklarga uchrayabsizmi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            7 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz kerakli tezlikga chiqaolyabdimi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            8 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz ochib qolyabdimi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+
+        ];
+        $questions[2] = [
+            1 => [
+                'id' => 1,
+                'question' => 'Divgateliz o\'t olyabdimi ?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            2 => [
+                'id' => 1,
+                'question' => 'Mator qismida tutun chiqdimi ?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            3 => [
+                'id' => 1,
+                'question' => 'Tormiz tizimi to\'g\'ri ishlaybdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            4 => [
+                'id' => 1,
+                'question' => 'Avtomobilningiz turli siltanishlarga ochirayabdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+
+            5 => [
+                'id' => 1,
+                'question' => 'Avtomobilningiz  ot olyabdimi',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+
+            6 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz rul qisimi nosozliklarga uchrayabsizmi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            7 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz kerakli tezlikga chiqaolyabdimi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
+            ],
+            8 => [
+                'id' => 1,
+                'question' => 'Avtomobilingiz ochib qolyabdimi?',
+                'answers' => [
+                    [
+                        'id' => 0,
+                        'answer' => 'Ha',
+                    ],
+                    [
+                        'id' => 1,
+                        'answer' => 'Yo\'q',
+                    ],
+                ],
             ],
 
         ];
 
-
         return response()->json([
-            'answers' => $questions[$data['studentType']][$question_id],
+            'answers' => $questions[$student_type][$question_id],
         ]);
     }
 
@@ -261,10 +545,10 @@ class MainController extends Controller
             ],
             3 => [
                 1 => [
-                    'kompyuteringiz Ona platasi nosoz'
+                    'Iltmos kompyuteringizni qayta ishga tushiring va qayta urinib ko\'ring yoki Service Centerga olib kelishingiz mumkin'
                 ],
                 0 => [
-                    'Kompyuteringiz grafik kartasi nosoz '
+                    'Kompyuterning tizim o\'rnatilgan diski nosoz'
                 ],
             ],
             4 => [
@@ -310,13 +594,142 @@ class MainController extends Controller
 
         ];
         $questions[1] = [
-            4 => '4 What is the answer to life, the universe and everything?',
+            1 => [
+                1 => [
+                    'Perdaxranitel nosoz'
+                ],
+                0 => [
+                    'Divagtel moyi muddati o\'tgan'
+                ],
+            ],
+            2 => [
+                1 => [
+                    'Yoqilg\'ingiz tugab qolgan'
+                ],
+                0 => [
+                    'Avtomobil Antifriz suyuqligi kamaygan'
+                ],
+            ],
+            3 => [
+                1 => [
+                    'Pachilnik to\'kilib ketgan'
+                ],
+                0 => [
+                    'Kalodka yemirilgan'
+                ],
+            ],
+            4 => [
+                1 => [
+                    'Avtomobil sinov muddatida chiqmagan'
+                ],
+                0 => [
+                    'Zaslonka qismi tolib qolgab'
+                ],
+            ],
+            5 => [
+                1 => [
+                    'Uzatma qutsi shestrnalari shikastlangan'
+                ],
+                0 => [
+                    'Avtomobil Akkumlaytori ishdan chiqqan'
+                ],
+            ],
+            6 => [
+                1 => [
+                    'Injektor nosoz'
+                ],
+                0 => [
+                    'Stablizator ishlamaybdi'
+                ],
+            ],
+            7 => [
+                1 => [
+                    'Havo Haydagich qismida turli qisqa tutashish mavjud bolishi mumkin'
+                ],
+                0 => [
+                    'Hovo filteri nosoz'
+                ],
+            ],
+            8 => [
+                1 => [
+                    'Avtomobil karobka qisimi nosoz'
+                ],
+                0 => [
+                    'Avtomobilingiz Benza nasos nosoz'
+                ],
+            ],
 
-            5 => '5 What is the answer to life, the universe and everything?',
-
-            6 => '6 What is the answer to life, the universe and everything?',
 
         ];
+        $questions[3] = [
+            1 => [
+                1 => [
+                    'Perdaxranitel nosoz'
+                ],
+                0 => [
+                    'Divagtel moyi muddati o\'tgan'
+                ],
+            ],
+            2 => [
+                1 => [
+                    'Yoqilg\'ingiz tugab qolgan'
+                ],
+                0 => [
+                    'Avtomobil Antifriz suyuqligi kamaygan'
+                ],
+            ],
+            3 => [
+                1 => [
+                    'Pachilnik to\'kilib ketgan'
+                ],
+                0 => [
+                    'Kalodka yemirilgan'
+                ],
+            ],
+            4 => [
+                1 => [
+                    'Avtomobil sinov muddatida chiqmagan'
+                ],
+                0 => [
+                    'Zaslonka qismi tolib qolgab'
+                ],
+            ],
+            5 => [
+                1 => [
+                    'Uzatma qutsi shestrnalari shikastlangan'
+                ],
+                0 => [
+                    'Avtomobil Akkumlaytori ishdan chiqqan'
+                ],
+            ],
+            6 => [
+                1 => [
+                    'Injektor nosoz'
+                ],
+                0 => [
+                    'Stablizator ishlamaybdi'
+                ],
+            ],
+            7 => [
+                1 => [
+                    'Havo Haydagich qismida turli qisqa tutashish mavjud bolishi mumkin'
+                ],
+                0 => [
+                    'Hovo filteri nosoz'
+                ],
+            ],
+            8 => [
+                1 => [
+                    'Avtomobil karobka qisimi nosoz'
+                ],
+                0 => [
+                    'Avtomobilingiz Benza nasos nosoz'
+                ],
+            ],
+
+
+        ];
+
         return response()->json([
             'answer' => $questions[$student_type][$parent_question_id][$question_id]
         ]);
